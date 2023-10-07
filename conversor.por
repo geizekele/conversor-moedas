@@ -1,21 +1,29 @@
 programa {
   funcao inicio() {
+    inteiro op
 
-    real moeda
-    inteiro opcao
+    escreva(" -------- CONVERSOR ---------")
+    escreva("\n | 1 - Iene (JPY)           |")
+    escreva("\n | 2 - Dolar Canadense (CAD)|")
+    escreva("\n | 3 - Peso chileno (CLP)   |")
+    escreva("\n Olá! Escolha para qual moeda deseja converter: ")
+    leia(op)
 
-    escreva("Olá! Escolha para qual moeda deseja converter: ")
-    escreva("1 - Iene (JPY)")
-    escreva("2 - Dolar Canadense (CAD)")
-    escreva("3 - Peso chileno (CLP)")
-    leia(opcao)
-
-    conversor(opcao)
+    conversor(op)
   }
 
-  funcao conversor(){
+  funcao conversor(inteiro opcao){
+    limpa()
+    real valor, moeda
+
     escolha (opcao){
       caso 1:
+        escreva("CONVERSAO PARA IENE/JPY \n")
+        escreva("Digite o valor em reais:R$ ")
+        leia(moeda)
+
+        valor = moeda * 470
+        escreva("O valor de R$" + moeda + " em Iene é de ¥" + valor)
       pare
 
       caso 2:
