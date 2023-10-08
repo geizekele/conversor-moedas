@@ -33,10 +33,14 @@ programa {
         valor = moeda * 0.27
         escreva("O valor de R$" + moeda + " (reais) em Dolar Canadense é de C$" + valor)
       pare
-
       caso 3:
+        escreva("CONVERSAO PARA PESO CHILENO (CLP)\n")
+        escreva("Digite o valor em reais:R$ ")
+        leia(moeda)
+
+        valor = moeda * 178
+        escreva("O valor de R$" + moeda + " (reais) em Pesos Chilenos é de CLP$" + valor)
       pare
     }
-
   }
 }
